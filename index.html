@@ -7,13 +7,16 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     body {
-      background-image: url('https://images.unsplash.com/photo-1547394765-185e1e658397?fit=crop&w=1920&q=80'); /* Replace with a suitable gaming-related background */
+      /* Substitua 'https://images.unsplash.com/...' por uma URL de imagem de fundo de jogo de sua escolha
+         que você tenha permissão para usar, ou uma imagem local como 'img/background-games.jpg'
+         Certifique-se de que o caminho esteja correto se for uma imagem local. */
+      background-image: url('https://images.unsplash.com/photo-1547394765-185e1e658397?fit=crop&w=1920&q=80');
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
     }
     .overlay {
-      background-color: rgba(0, 0, 0, 0.7); /* Dark overlay for better text readability */
+      background-color: rgba(0, 0, 0, 0.7); /* Sobreposição escura para melhor legibilidade do texto */
     }
   </style>
 </head>
@@ -37,7 +40,7 @@
         onclick="abrirJogo('aluno1')"
         class="bg-purple-700 hover:bg-purple-800 text-white font-bold py-4 px-6 rounded-xl shadow-lg transform transition-transform duration-200 hover:scale-105 active:scale-95 text-lg"
       >
-        Jogo do Aluno 1
+        Jogo do Professor
       </button>
 
       <button onclick="abrirJogo('aluno2')" class="bg-purple-700 hover:bg-purple-800 text-white font-bold py-4 px-6 rounded-xl shadow-lg transform transition-transform duration-200 hover:scale-105 active:scale-95 text-lg">
@@ -146,7 +149,7 @@
         Professor da Disciplina <a href="https://github.com/felipecarusoo" target="_blank" class="text-blue-400 hover:underline">Felipe Caruso</a>.
       </p>
       <p class="text-sm mt-1">
-        Projeto base desenvolvido por <a href="https://editor.p5js.org/demetrio.torgan/full/Sd9rN3Xm9" target="_blank" class="text-blue-400 hover:underline">Demétrio Torgan</a>.
+        Projeto base por <a href="https://editor.p5js.org/demetrio.torgan/full/Sd9rN3Xm9" target="_blank" class="text-blue-400 hover:underline">Demétrio Torgan</a>.
       </p>
       <p class="text-xs mt-2">
         &copy; 2025. Todos os direitos reservados.
@@ -155,9 +158,10 @@
   </div>
 
   <script>
-    function abrirJogo(aluno) {
-      // Supondo que a pasta dos projetos está em /projetos/alunoX/index.html
-      const url = `projetos/${aluno}/index.html`;
+    function abrirJogo(alunoId) {
+      // Com a sua estrutura de pastas atual (game.html na raiz),
+      // a URL aponta diretamente para game.html e passa o ID do aluno como parâmetro.
+      const url = `game.html?aluno=${alunoId}`;
       window.open(url, '_blank');
     }
   </script>
