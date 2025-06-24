@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jogos dos Estudantes - História e Desenvolvimento de Jogos Digitais</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-image: url('https://images.unsplash.com/photo-1547394765-185e1e658397?fit=crop&w=1920&q=80'); /* Replace with a suitable gaming-related background */
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.7); /* Dark overlay for better text readability */
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col items-center p-6 text-white">
+
+  <div class="overlay absolute inset-0 z-0"></div>
+
+  <div class="relative z-10 flex flex-col items-center w-full max-w-6xl">
+    <header class="mb-12 text-center">
+      <h1 class="text-5xl font-extrabold text-blue-400 drop-shadow-lg">
+        História e Desenvolvimento de Jogos Digitais 🎮
+      </h1>
+      <p class="text-xl text-gray-200 mt-4 max-w-2xl mx-auto">
+        Explore os protótipos de jogos criados pelos nossos estudantes da eletiva.
+      </p>
+    </header>
+
+    <main class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full mb-12">
+
+      <button 
+        onclick="abrirJogo('aluno1')"
+        class="bg-purple-700 hover:bg-purple-800 text-white font-bold py-4 px-6 rounded-xl shadow-lg transform transition-transform duration-200 hover:scale-105 active:scale-95 text-lg"
+      >
+        Jogo do Aluno 1
+      </button>
+
+      <button onclick="abrirJogo('aluno2')" class="bg-purple-700 hover:bg-purple-800 text-white font-bold py-4 px-6 rounded-xl shadow-lg transform transition-transform duration-200 hover:scale-105 active:scale-95 text-lg">
+        Jogo do Aluno 2
+      </button>
+
+      <button onclick="abrirJogo('aluno3')" class="bg-purple-700 hover:bg-purple-800 text-white font-bold py-4 px-6 rounded-xl shadow-lg transform transition-transform duration-200 hover:scale-105 active:scale-95 text-lg">
+        Jogo do Aluno 3
+      </button>
+
+      <button onclick="abrirJogo('aluno4')" class="bg-purple-700 hover:bg-purple-800 text-white font-bold py-4 px-6 rounded-xl shadow-lg transform transition-transform duration-200 hover:scale-105 active:scale-95 text-lg">
+        Jogo do Aluno 4
+      </button>
+
+      <button onclick="abrirJogo('aluno5')" class="bg-purple-700 hover:bg-purple-800 text-white font-bold py-4 px-6 rounded-xl shadow-lg transform transition-transform duration-200 hover:scale-105 active:scale-95 text-lg">
+        Jogo do Aluno 5
+      </button>
+
+      <button onclick="abrirJogo('aluno6')" class="bg-purple-700 hover:bg-purple-800 text-white font-bold py-4 px-6 rounded-xl shadow-lg transform transition-transform duration-200 hover:scale-105 active:scale-95 text-lg">
+        Jogo do Aluno 6
+      </button>
+
+      <button onclick="abrirJogo('aluno7')" class="bg-purple-700 hover:bg-purple-800 text-white font-bold py-4 px-6 rounded-xl shadow-lg transform transition-transform duration-200 hover:scale-105 active:scale-95 text-lg">
+        Jogo do Aluno 7
+      </button>
+
+      <button onclick="abrirJogo('aluno8')" class="bg-purple-700 hover:bg-purple-800 text-white font-bold py-4 px-6 rounded-xl shadow-lg transform transition-transform duration-200 hover:scale-105 active:scale-95 text-lg">
+        Jogo do Aluno 8
+      </button>
+
+      <button onclick="abrirJogo('aluno9')" class="bg-purple-700 hover:bg-purple-800 text-white font-bold py-4 px-6 rounded-xl shadow-lg transform transition-transform duration-200 hover:scale-105 active:scale-95 text-lg">
+        Jogo do Aluno 9
+      </button>
+
+      <button onclick="abrirJogo('aluno10')" class="bg-purple-700 hover:bg-purple-800 text-white font-bold py-4 px-6 rounded-xl shadow-lg transform transition-transform duration-200 hover:scale-105 active:scale-95 text-lg">
+        Jogo do Aluno 10
+      </button>
+
+      <button onclick="abrirJogo('aluno11')" class="bg-purple-700 hover:bg-purple-800 text-white font-bold py-4 px-6 rounded-xl shadow-lg transform transition-transform duration-200 hover:scale-105 active:scale-95 text-lg">
+        Jogo do Aluno 11
+      </button>
+
+      <button onclick="abrirJogo('aluno12')" class="bg-purple-700 hover:bg-purple-800 text-white font-bold py-4 px-6 rounded-xl shadow-lg transform transition-transform duration-200 hover:scale-105 active:scale-95 text-lg">
+        Jogo do Aluno 12
+      </button>
+
+      <button onclick="abrirJogo('aluno13')" class="bg-purple-700 hover:bg-purple-800 text-white font-bold py-4 px-6 rounded-xl shadow-lg transform transition-transform duration-200 hover:scale-105 active:scale-95 text-lg">
+        Jogo do Aluno 13
+      </button>
+
+      <button onclick="abrirJogo('aluno14')" class="bg-purple-700 hover:bg-purple-800 text-white font-bold py-4 px-6 rounded-xl shadow-lg transform transition-transform duration-200 hover:scale-105 active:scale-95 text-lg">
+        Jogo do Aluno 14
+      </button>
+
+      <button onclick="abrirJogo('aluno15')" class="bg-purple-700 hover:bg-purple-800 text-white font-bold py-4 px-6 rounded-xl shadow-lg transform transition-transform duration-200 hover:scale-105 active:scale-95 text-lg">
+        Jogo do Aluno 15
+      </button>
+
+      <button onclick="abrirJogo('aluno16')" class="bg-purple-700 hover:bg-purple-800 text-white font-bold py-4 px-6 rounded-xl shadow-lg transform transition-transform duration-200 hover:scale-105 active:scale-95 text-lg">
+        Jogo do Aluno 16
+      </button>
+
+      <button onclick="abrirJogo('aluno17')" class="bg-purple-700 hover:bg-purple-800 text-white font-bold py-4 px-6 rounded-xl shadow-lg transform transition-transform duration-200 hover:scale-105 active:scale-95 text-lg">
+        Jogo do Aluno 17
+      </button>
+
+      <button onclick="abrirJogo('aluno18')" class="bg-purple-700 hover:bg-purple-800 text-white font-bold py-4 px-6 rounded-xl shadow-lg transform transition-transform duration-200 hover:scale-105 active:scale-95 text-lg">
+        Jogo do Aluno 18
+      </button>
+
+      <button onclick="abrirJogo('aluno19')" class="bg-purple-700 hover:bg-purple-800 text-white font-bold py-4 px-6 rounded-xl shadow-lg transform transition-transform duration-200 hover:scale-105 active:scale-95 text-lg">
+        Jogo do Aluno 19
+      </button>
+
+      <button onclick="abrirJogo('aluno20')" class="bg-purple-700 hover:bg-purple-800 text-white font-bold py-4 px-6 rounded-xl shadow-lg transform transition-transform duration-200 hover:scale-105 active:scale-95 text-lg">
+        Jogo do Aluno 20
+      </button>
+
+      <button onclick="abrirJogo('aluno21')" class="bg-purple-700 hover:bg-purple-800 text-white font-bold py-4 px-6 rounded-xl shadow-lg transform transition-transform duration-200 hover:scale-105 active:scale-95 text-lg">
+        Jogo do Aluno 21
+      </button>
+
+      <button onclick="abrirJogo('aluno22')" class="bg-purple-700 hover:bg-purple-800 text-white font-bold py-4 px-6 rounded-xl shadow-lg transform transition-transform duration-200 hover:scale-105 active:scale-95 text-lg">
+        Jogo do Aluno 22
+      </button>
+
+      <button onclick="abrirJogo('aluno23')" class="bg-purple-700 hover:bg-purple-800 text-white font-bold py-4 px-6 rounded-xl shadow-lg transform transition-transform duration-200 hover:scale-105 active:scale-95 text-lg">
+        Jogo do Aluno 23
+      </button>
+
+      <button onclick="abrirJogo('aluno24')" class="bg-purple-700 hover:bg-purple-800 text-white font-bold py-4 px-6 rounded-xl shadow-lg transform transition-transform duration-200 hover:scale-105 active:scale-95 text-lg">
+        Jogo do Aluno 24
+      </button>
+
+      <button onclick="abrirJogo('aluno25')" class="bg-purple-700 hover:bg-purple-800 text-white font-bold py-4 px-6 rounded-xl shadow-lg transform transition-transform duration-200 hover:scale-105 active:scale-95 text-lg">
+        Jogo do Aluno 25
+      </button>
+
+    </main>
+
+    <footer class="text-center text-gray-300 mt-auto pt-8 border-t border-gray-700 w-full max-w-6xl">
+      <p class="text-sm">
+        Disciplina Eletiva: **História e Desenvolvimento de Jogos Digitais** - Colégio Estadual Amálio Pinheiro.
+      </p>
+      <p>
+        Professor da Disciplina <a href="https://github.com/felipecarusoo" target="_blank" class="text-blue-400 hover:underline">Felipe Caruso</a>.
+      </p>
+      <p class="text-sm mt-1">
+        Projeto base desenvolvido por <a href="https://editor.p5js.org/demetrio.torgan/full/Sd9rN3Xm9" target="_blank" class="text-blue-400 hover:underline">Demétrio Torgan</a>.
+      </p>
+      <p class="text-xs mt-2">
+        &copy; 2025. Todos os direitos reservados.
+      </p>
+    </footer>
+  </div>
+
+  <script>
+    function abrirJogo(aluno) {
+      // Supondo que a pasta dos projetos está em /projetos/alunoX/index.html
+      const url = `projetos/${aluno}/index.html`;
+      window.open(url, '_blank');
+    }
+  </script>
+
+</body>
+</html>
